@@ -1,6 +1,8 @@
-body {
-  background: #1e90ff;
-}
+<style>
+  body {
+    background: #1e90ff;
+  }
+</style>
 div {
   background: #ffffff;
   width: 300px;
