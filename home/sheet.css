@@ -1,0 +1,59 @@
+body {
+  background: #ffffff;
+}
+body:active {
+  background: #ffffff;
+  background-image:url("image/eye_spam.gif");
+}
+.title {
+  background: #cc0033;
+  font-size: xx-large;
+  text-align: center;
+  width: 300px;
+  height: auto;
+  border: 5px solid;
+  border-color: #ffa500;
+  border-radius: 15px;
+  margin: 30px auto;
+}
+.line {
+  margin : 0 auto;
+  height: 15px;
+  width: 70%;
+  border-top: 2px solid #cccccc;
+}
+.links {
+  margin: 10px;
+  text-align: center;
+  margin: auto;
+}
+.link_button {
+  padding: 10px 20px;
+  display: inline-block;
+  width: 250px;
+  height: 35px;
+  border: 4px solid;
+  border-color: #a9a9a9;
+  margin: auto;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: x-large;
+}
+.link_icon {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  top: 4px;
+}
+#twitter_button {
+  background: #00bfff;
+}
+#twitter_button:hover {
+  background: #1e90ff;
+}
+#github_button {
+  background: #404040;
+}
+#github_button:hover {
+  background: #202020;
+}
