@@ -1,0 +1,14 @@
+body {
+  background: #dcdcdc;
+}
+.title {
+  background: #00bfff;
+  font-size: xx-large;
+  text-align: center;
+  width: 300px;
+  height: auto;
+  border: 2px solid;
+  border-color: #ffa500;
+  border-radius: 10px;
+  margin: auto;
+}
