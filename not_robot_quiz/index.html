@@ -7,7 +7,11 @@
     <form action="?" method="POST">
       <div class="g-recaptcha" data-sitekey="6LeTtYgdAAAAANgraANZ3KqodcCgWmONpdV4xsil"></div>
       <br/>
-      <input type="submit" value="Submit">
+      <script type="text/javascript">
+  var onloadCallback = function() {
+    alert("grecaptcha is ready!");
+  };
+</script>
     </form>
   </body>
 </html>
