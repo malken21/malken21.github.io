@@ -2,3 +2,8 @@
 https://malken21.github.io/home/index.html
 <br>
 https://malken21.github.io/home
+<br>
+https://malken21.github.io/gun1
+<br>
+https://malken21.github.io/Discord_ChannelName
+<br>
