@@ -1,0 +1,14 @@
+body {
+    background: #ffff;
+}
+.back {
+    height: 100%;
+    width: auto;
+    text-align: center;
+}
+.space {
+    height: 15px;
+}
+.title {
+    height: 15px;
+}
