@@ -16,7 +16,7 @@ const jsonData= [
     {"after":"ꓠ","before":["N"]},
     {"after":"ꓳ","before":["O"]},
     {"after":"ꓑ","before":["P"]},
-    {"after":"𝘘","before":["Q"]},
+    {"after":"𝐐","before":["Q"]},
     {"after":"ꓣ","before":["R"]},
     {"after":"ꓢ","before":["S"]},
     {"after":"ꓔ","before":["T"]},
