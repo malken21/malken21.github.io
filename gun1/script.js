@@ -8,6 +8,7 @@ fetch('gun1.mp3').then(response => response.blob())
 })
 
 function audio_event(){
+    window.navigator.vibrate(200);
     audio.play();
 }
 
