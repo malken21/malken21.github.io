@@ -7,7 +7,7 @@ fetch('gun1.mp3').then(response => response.blob())
     audio = new Audio(URL.createObjectURL(data));
 })
 
-function audio_event(){
+async function audio_event(){
     window.navigator.vibrate(200);
     audio.play();
 }
