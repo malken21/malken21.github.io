@@ -10,3 +10,5 @@ https://malken21.github.io/Discord_ChannelName
 https://malken21.github.io/MarumasaMod_Minecraft1.18.1/updates.json
 <br>
 https://malken21.github.io/HTML
+<br>
+https://malken21.github.io/TORO_Wiki/home
