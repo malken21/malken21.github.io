@@ -1,0 +1,121 @@
+html {
+  height: 100%;
+}
+body {
+  background: #2d2e2f;
+  margin: 0px;
+  height: 100%;
+  color: #ffffff;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+/*----------メイン処理----------*/
+
+.main div h1 {
+  border-bottom: 3px solid #555a64;
+}
+
+
+.main {
+  position: absolute;
+  overflow-y: scroll;
+  height: calc(100vh - 95px);
+  right: 0;
+  width: calc(100vw - 265px);
+  margin: 0px 0px 8px 8px;
+}
+
+main {
+  position: relative;
+	display: inline-block;
+  width: 100%;
+  height: calc(100vh - 95px);
+}
+
+.main div {
+  margin: 35px;
+}
+
+/*----------メニュー処理----------*/
+
+.menu {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+
+.menu div {
+  top: 0px;
+  height: 100%;
+  position: absolute;
+  right: -3px;
+}
+
+.menu ul li {
+  width: 200px;
+  padding: 8px 16px;
+  margin: 0px 8px;
+  border-bottom: 3px solid #404040;
+}
+
+.menu ul {
+  overflow-y: scroll;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  list-style:none;
+}
+
+/*----------ヘッダー処理----------*/
+
+header {
+  background: #18191a;
+  padding: 8px;
+  margin-bottom: 8px;
+  display:flex;
+  border-bottom: 3px solid #404040;
+}
+
+/*ヘッダー 左側*/
+
+.header_title {
+  margin: 8px;
+  position: relative;
+  font-size: 30px;
+  text-align: right;
+  width: 210px;
+}
+.header_title img {
+  margin: 0px;
+  position: absolute;
+  top: -3px;
+  left: 0px;
+  width: 44px;
+  height: 44px;
+  border: 3px solid #7b8ea0;
+}
+.header_title a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*ヘッダー右側*/
+
+.header_right {
+  margin: auto 0 auto auto;
+  font-size: 20px;
+}
+.header_right ul {
+  overflow: hidden;
+  margin: auto;
+  list-style:none;
+}
+.header_right ul li {
+  margin: 0px 20px;
+  float: left;
+  text-align: center;
+  white-space: nowrap;
+}
+.header_right ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
