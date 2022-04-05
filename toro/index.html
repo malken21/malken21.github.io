@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>TORO路線検索</title>
+    <link rel="icon" href="image/favicon.png">
+    <link rel="stylesheet" href="sheet.css">
+    <script src="script.js"></script>
+
+  </head>
+  <body>
+    <div class="back">
+      <p>TORO路線検索</p>
+      <div class="title"></div>
+      <div class="before">
+        現在地<input type="text" id="from" name="name" autocomplete="off" size="15" value="">
+        <p></p>
+        行先<input type="text" id="to" name="name" autocomplete="off" size="15" value="">
+        <p></p>
+        <input type="button" value="送信ボタン" onclick="requestbutton();">
+      </div>
+      <div class="space"></div>
+      <div class="after">
+        <p>結果</p>
+        <div id="result"></div>
+      </div>
+    </div>
+  </body>
+</html>

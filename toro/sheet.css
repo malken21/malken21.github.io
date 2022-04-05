@@ -1,0 +1,18 @@
+body {
+    background: #ffff;
+    margin: 0;
+}
+.back {
+    height: 100%;
+    width: auto;
+    text-align: center;
+}
+.space {
+    height: 15px;
+}
+.title {
+    height: 15px;
+}
+header{
+    background: chartreuse;
+}
