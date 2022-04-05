@@ -12,3 +12,5 @@ https://malken21.github.io/MarumasaMod_Minecraft1.18.1/updates.json
 https://malken21.github.io/HTML
 <br>
 https://malken21.github.io/TORO_Wiki/home
+<br>
+https://malken21.github.io/TORO_Wiki/toro
