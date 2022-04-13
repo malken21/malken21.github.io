@@ -4,7 +4,7 @@ var myAlert = function (response) {
         let url = new URL(window.location.href);
         let params = url.searchParams;
 
-        window.location.href = `../?count=${params.get('count')+1}`;
+        window.location.href = `./?count=${params.get('count')+1}`;
     };
     setTimeout(fn, 1000);
 };
