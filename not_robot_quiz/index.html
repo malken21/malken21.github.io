@@ -1,9 +1,8 @@
 <html>
-  <head>
-    <title>テスト</title>
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"async defer></script>
-
-          <script type="text/javascript">
+<head>
+<title>Explicit render after an onload callback</title>
+<script>
+//onload callback function（ページをロードした際に実行される関数）
 var onloadCallback = function() {
   //ウィジェットを表示するメソッド
   grecaptcha.render('recaptcha', { 
@@ -16,13 +15,11 @@ var myAlert = function(response) {
   alert("チェックボックスがチェックされました！");
 };
 </script>
-
-  </head>
-  <body>
-    <form action="?" method="POST">
-      <div class="recaptcha" data-sitekey="6LeTtYgdAAAAANgraANZ3KqodcCgWmONpdV4xsil"></div>
-      <br/>
-
-    </form>
-  </body>
+</head>
+<body>
+  <form method="post" action="?">
+    <div id="recaptcha"></div>
+  </form>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script><!-- API の読み込み -->
+</body>
 </html>
