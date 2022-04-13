@@ -1,33 +1,20 @@
 <html>
 
 <head>
-    <title>Explicit render after an onload callback</title>
-
+    <title>Automatically render the reCAPTCHA widget</title>
     <script>
-        var onloadCallback = function () {
-            grecaptcha.render('recaptcha', {
-                'sitekey': "6LeTtYgdAAAAANgraANZ3KqodcCgWmONpdV4xsil",
-                'callback': myAlert
-            });
-            var myAlert = function (response) {
-                setTimeout(fn, 1000);
-            };
+        //.g-recaptcha タグの data-callback 属性で指定したコールバック関数の定義
+        var myAlert = function (response) {
+            alert("チェックボックスがチェックされました！");
         };
     </script>
-
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
-
-    <link rel="stylesheet" href="sheet.css">
-    <script src="script.js"></script>
-
 </head>
 
 <body>
-    <div>
-        <form method="post" action="?">
-            <div id="recaptcha"></div>
-        </form>
-    </div>
+    <form method="post" action="?">
+        <div class="g-recaptcha" data-sitekey="6LeTtYgdAAAAANgraANZ3KqodcCgWmONpdV4xsil" data-callback="myAlert"></div>
+    </form>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script><!-- API の読み込み -->
 </body>
 
 </html>
