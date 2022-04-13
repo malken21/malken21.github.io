@@ -5,20 +5,20 @@
 //onload callback function（ページをロードした際に実行される関数）
 var onloadCallback = function() {
   //ウィジェットを表示するメソッド
-  grecaptcha.render('recaptcha1', { 
+  grecaptcha.render('recaptcha', { 
     'sitekey' : "6LeTtYgdAAAAANgraANZ3KqodcCgWmONpdV4xsil",
     'callback' : myAlert //コールバック関数名
   });
 };
 //上記 'callback' で指定したコールバック関数の定義
 var myAlert = function(response) {
-  alert("チェックボックスがチェックされました！");
+  window.location.href = 'https://malken21.github.io/not_robot_quiz/';
 };
 </script>
 </head>
 <body>
   <form method="post" action="?">
-    <div id="recaptcha1"></div>
+    <div id="recaptcha"></div>
   </form>
   <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script><!-- API の読み込み -->
 </body>
