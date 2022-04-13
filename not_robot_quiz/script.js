@@ -8,7 +8,7 @@ function count() {
     document.getElementById("count").innerHTML = parameter;
 }
 
-let Reload = function () {
+let reload = function () {
     setTimeout(function () {
         window.location.href = `./?count=${parameter + 1}`;
     }, 1000);
