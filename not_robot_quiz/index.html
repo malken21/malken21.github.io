@@ -1,19 +1,33 @@
 <html>
 
 <head>
-    
+    <title>Explicit render after an onload callback</title>
+
+    <script>
+        var onloadCallback = function () {
+            grecaptcha.render('recaptcha', {
+                'sitekey': "6LeTtYgdAAAAANgraANZ3KqodcCgWmONpdV4xsil",
+                'callback': myAlert
+            });
+            var myAlert = function (response) {
+                setTimeout(fn, 1000);
+            };
+        };
+    </script>
+
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+
     <link rel="stylesheet" href="sheet.css">
     <script src="script.js"></script>
-    
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
-    <title>Explicit render after an onload callback</title>
+
 </head>
 
 <body>
-    <form method="post" action="?">
-        <div id="recaptcha"></div>
-    </form>
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+    <div>
+        <form method="post" action="?">
+            <div id="recaptcha"></div>
+        </form>
+    </div>
 </body>
 
 </html>
