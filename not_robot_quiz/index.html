@@ -5,18 +5,8 @@
     <link rel="stylesheet" href="sheet.css">
     <script src="script.js"></script>
     
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
     <title>Explicit render after an onload callback</title>
-    <script>
-        var onloadCallback = function () {
-            grecaptcha.render('recaptcha', {
-                'sitekey': "6LeTtYgdAAAAANgraANZ3KqodcCgWmONpdV4xsil",
-                'callback': myAlert //コールバック関数名
-            });
-            var myAlert = function (response) {
-                setTimeout(recaptcha(), 1000);
-            };
-        };
-    </script>
 </head>
 
 <body>
@@ -24,7 +14,6 @@
         <div id="recaptcha"></div>
     </form>
     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
-    <!-- API の読み込み -->
 </body>
 
 </html>
