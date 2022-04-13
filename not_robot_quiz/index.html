@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>reCAPTCHAカウンター</title>
+    <link rel="stylesheet" href="sheet.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="count();">
+
+    <div class="counter">
+        <a>人間だと証明した回数</a><a id="count"></a><a>回</a>
+    </div>
+
+    <div class="main">
+        <form method="post" action="?">
+            <a class="g-recaptcha" data-sitekey="6LeTtYgdAAAAANgraANZ3KqodcCgWmONpdV4xsil" data-callback="myAlert"></a>
+        </form>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </div>
+</body>
+
+</html>
