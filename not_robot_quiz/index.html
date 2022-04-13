@@ -5,7 +5,7 @@
 //onload callback function（ページをロードした際に実行される関数）
 var onloadCallback = function() {
   //ウィジェットを表示するメソッド
-  grecaptcha.render('recaptcha', { 
+  grecaptcha.render('recaptcha1', { 
     'sitekey' : "6LeTtYgdAAAAANgraANZ3KqodcCgWmONpdV4xsil",
     'callback' : myAlert //コールバック関数名
   });
@@ -18,7 +18,7 @@ var myAlert = function(response) {
 </head>
 <body>
   <form method="post" action="?">
-    <div id="recaptcha"></div>
+    <div id="recaptcha1"></div>
   </form>
   <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script><!-- API の読み込み -->
 </body>
