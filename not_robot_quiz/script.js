@@ -1,3 +1,3 @@
-var fn = function() {
-  console.log("10秒経過しました");
-};
+        var myAlert = function (response) {
+            alert("チェックボックスがチェックされました！");
+        };
