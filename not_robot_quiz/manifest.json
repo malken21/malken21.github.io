@@ -1,0 +1,19 @@
+{
+    "lang": "ja",
+    "name": "reCAPTCHAカウンター",
+    "short_name": "reCAPTCHA",
+    "start_url": "/reCAPTCHA_counter",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "image/favicon.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "image/icon.png",
+            "sizes": "129x129",
+            "type": "image/png"
+        }
+    ]
+}

@@ -13,3 +13,12 @@ var Reload = function () {
         window.location.href = `./?count=${parameter + 1}`;
     }, 1000);
 };
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register("./serviceWorker.js")
+        .then(function (registration) {
+            console.log(registration);
+        }).catch(function (error) {
+            console.log(error);
+        });
+}
